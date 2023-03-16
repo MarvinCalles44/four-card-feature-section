@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(250, 250, 250);
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 23px;
+    text-align: center;
+}
+
+h1 span{
+    font-weight: 600;
+}
+
+p{
+    margin-bottom: 80px;
+    text-align: center;
+    margin-top: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: rgb(164, 163, 166);
+}
+
+.principal-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.card-container{
+    width: auto;
+    margin-top: 90px;
+    width: 315px;
+}
+
+.card{
+    margin-bottom: 20px;
+    border-radius: 8px;
+    height: 225px;
+    background-color: white;
+    box-shadow: 0px 14px 14px 5px rgba(0,0,0,0.24);
+-webkit-box-shadow: 0px 14px 14px 5px rgba(0,0,0,0.24);
+-moz-box-shadow: 0px 14px 14px 5px rgba(0,0,0,0.24);
+}
+
+.card.supervisor{
+    border-top: 4px solid rgb(94, 202, 203);
+}
+
+.card.team{
+    border-top: 4px solid rgb(190, 101, 101);
+}
+
+.card.karma{
+    border-top: 4px solid rgb(245, 174, 86);
+}
+
+.card.calculator{
+    border-top: 4px solid rgb(99, 155, 217);
+}
+
+.title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding: 23px 0 10px 26px;
+    font-size:19px;
+}
+
+.desc{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(164, 163, 166);
+    font-size: 15px;
+    padding: 0 0 10px 26px;
+}
+
+.icon{
+    float: right;
+    padding: 15px 30px 30px 0;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 1440px){
+
+    h1{
+        font-size: 35px;
+        width: 500px;
+    }
+
+    p{
+        width: 550px;
+        margin-bottom: 40px;
+    }
+
+    .card-container{
+        height: auto;
+        width: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .box{
+        position: relative;
+        height: 600px;
+        width: 1200px;
+    }
+    
+    .card{
+        width: 350px;
+        height: 250px;
+    }
+
+    .card.calculator{
+        position: absolute;
+        right: 40px;
+        top: 150px;
+    }
+
+    .card.team{
+        position: absolute;
+        top: 20px;
+        right: 422px;
+    }
+
+    .card.karma{
+        position: absolute;
+        bottom: 20px;
+        right: 422px;
+    }
+
+    .card.supervisor{
+        position: absolute;
+        left: 45px;
+        top: 150px;
+    }
+
+
+}
